@@ -1,6 +1,22 @@
 {
-  "settingsInheritedFrom": "swagger-api/whitesource-config@main",
-  "scanSettings": {
-    "baseBranches": ["master", "3.0.0"]
-  }
+    "checkRunSettings": {
+        "vulnerableCheckRunConclusionLevel": "success",
+        "licenseCheckRunConclusionLevel": "success",
+        "displayMode": "diff",
+        "showWsInfo": false
+    },
+    "scanSettings": {
+        "baseBranches": [
+            "master",
+            "3.0.0"
+        ],
+        "enableLicenseViolations": false,
+        "enableIaC": false
+    },
+    "issueSettings": {
+        "minSeverityLevel": "HIGH",
+        "openConfidentialIssues": true,
+        "displayLicenseViolations": false,
+        "issueType": "VULNERABILITY"
+    }
 }
